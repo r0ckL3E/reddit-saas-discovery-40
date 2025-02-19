@@ -25,12 +25,12 @@ export const SubredditInput = () => {
         {subreddits.map((subreddit) => (
           <div
             key={subreddit}
-            className="flex items-center gap-1 bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+            className="flex items-center gap-1.5 bg-blue-50 text-blue-700 px-3 py-1.5 rounded-full text-sm font-medium shadow-sm transition-all duration-200 hover:shadow-md hover:bg-blue-100"
           >
             {subreddit}
             <button
               onClick={() => handleRemoveSubreddit(subreddit)}
-              className="text-blue-600 hover:text-blue-800 transition-colors"
+              className="text-blue-500 hover:text-blue-700 transition-colors"
             >
               <X className="h-4 w-4" />
             </button>
@@ -43,7 +43,7 @@ export const SubredditInput = () => {
         onChange={(e) => setInput(e.target.value)}
         onKeyDown={handleAddSubreddit}
         placeholder="Add subreddits (e.g., r/Photography)"
-        className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+        className="w-full px-4 py-2.5 bg-white border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500/80 transition-all shadow-sm placeholder:text-gray-400"
       />
     </div>
   );
