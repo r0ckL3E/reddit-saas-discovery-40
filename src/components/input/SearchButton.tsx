@@ -23,7 +23,17 @@ export const SearchButton = () => {
         preserveAspectRatio="none"
       >
         <path
-          d="M 0,50 L 20,50 L 25,20 L 30,80 L 35,50 L 40,50 L 45,40 L 50,60 L 55,50 L 60,50 L 65,50 L 70,50 L 75,50 L 80,50 L 100,50"
+          d="M 0,50 L 100,50"
+          fill="none"
+          stroke="rgba(255,255,255,0.3)"
+          strokeWidth="1"
+          vectorEffect="non-scaling-stroke"
+          className={`transition-all duration-300 ${
+            !isAnimating ? "" : "hidden"
+          }`}
+        />
+        <path
+          d="M 0,50 L 30,50 L 35,50 L 37,20 L 40,80 L 43,50 L 45,50 L 50,50 L 55,50 L 60,50 L 65,50 L 70,50 L 100,50"
           fill="none"
           stroke="rgba(255,255,255,0.3)"
           strokeWidth="1"
@@ -31,7 +41,7 @@ export const SearchButton = () => {
           className={`transition-all duration-300 ${
             isAnimating
               ? "animate-[heartbeat_2s_ease-in-out]"
-              : ""
+              : "hidden"
           }`}
         />
       </svg>
