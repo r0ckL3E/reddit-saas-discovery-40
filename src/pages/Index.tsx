@@ -22,21 +22,21 @@ const Index = () => {
                 <span className="block text-sm font-medium text-gray-700 mb-2">Subreddits</span>
                 <SubredditInput />
               </label>
-              <div className="flex gap-4 items-start mt-[72px]">
+              <label className="block mt-[72px]">
+                <span className="block text-sm font-medium text-gray-700 mb-2">Business Context</span>
+                <BusinessContext />
+              </label>
+            </div>
+            <div className="space-y-6">
+              <div className="flex gap-4 items-start">
                 <div className="flex-1">
-                  <span className="block text-sm font-medium text-gray-700 mb-2">Business Context</span>
-                  <BusinessContext />
+                  <span className="block text-sm font-medium text-gray-700 mb-2">Target Query</span>
+                  <TargetQuery />
                 </div>
                 <div className="pt-8">
                   <SearchButton />
                 </div>
               </div>
-            </div>
-            <div className="space-y-6">
-              <label className="block mt-[72px]">
-                <span className="block text-sm font-medium text-gray-700 mb-2">Target Query</span>
-                <TargetQuery />
-              </label>
             </div>
           </div>
 
